@@ -20,7 +20,7 @@ class StellaBurgersLocators:
     LOGIN_BUTTON = (By.XPATH, "//button[text()= 'Войти']")  # кнопка "Войти" при авторизации
     QUIT_PERSONAL_CABINET = (By.XPATH, "//button[text()= 'Выход']")  # кнопка "Выход" в личном кабинете
     CONSTRUCTOR_BUTTON = (By.XPATH, "//p[text() = 'Конструктор']")  # кнопка Конструктор
-    LOGO_BUTTON = (By.CLASS_NAME, "AppHeader_header__logo__2D0X2")  # логотип сайта
+    LOGO_BUTTON = (By.XPATH, "//div[contains(@class, 'AppHeader_header__logo')]")  # логотип сайта
     COLLECT_BURGER_TEXT = (By.XPATH, "//h1[text()= 'Соберите бургер']")  # надпись "Соберите бургер"
     SAUCES_LOCATION_BUTTON = (By.XPATH, "//span[text() = 'Соусы']")  # кнопка "Соусы" в конструкторе
     SAUCES_PARRENT_CLASS = (By.XPATH, "//span[text()= 'Соусы']/parent::div")

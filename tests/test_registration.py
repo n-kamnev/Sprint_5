@@ -32,4 +32,4 @@ class TestStellaBurgerRegistration:
             StellaBurgerTestData.INCORRECT_PASSWORD)
         driver.find_element(*StellaBurgersLocators.CONFIRM_REGISTRATION_BUTTON).click()
         password_error = driver.find_element(*StellaBurgersLocators.INCORRECT_PASSWORD_INSCRIPTION).text
-        assert password_error == "Некорректный пароль"
+        assert password_error == StellaBurgerTestData.VALID_NOTIFICATION
